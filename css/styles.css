@@ -3302,8 +3302,8 @@ textarea.form-control-lg {
 }
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #246dad;
-  border-color: #246dad;
+  background-color: #0c585f;
+  border-color: #0c585f;
 }
 .btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
   box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.5);
@@ -7673,6 +7673,10 @@ textarea.form-control-lg {
 
 .text-end {
   text-align: right !important;
+}
+
+.name-color {
+  color: #0c585f;
 }
 
 .text-center {

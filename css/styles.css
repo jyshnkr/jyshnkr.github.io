@@ -3271,14 +3271,15 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  color: #bd5d38;
-  border-color: #bd5d38;
+  color: #6e5494;
+  border-color: #6e5494;
 }
 .btn-outline-primary:hover {
-  color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  color: #ffffff;
+  background-color: #6e5494;
+  border-color: #6e5494;
 }
+
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.5);
 }
@@ -11384,7 +11385,7 @@ p.lead {
     display: block;
   }
 }
-.social-icons .social-icon {
+.social-icons .social-icon-linkedin {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -11396,11 +11397,89 @@ p.lead {
   font-size: 1.5rem;
   margin-right: 1.5rem;
 }
-.social-icons .social-icon:last-child {
+.social-icons .social-icon-linkedin:last-child {
   margin-right: 0;
 }
-.social-icons .social-icon:hover {
-  background-color: #bd5d38;
+.social-icons .social-icon-linkedin:hover {
+  background-color: #0077b5;
+}
+
+.social-icons .social-icon-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social-icons .social-icon-github:last-child {
+  margin-right: 0;
+}
+.social-icons .social-icon-github:hover {
+  background-color: #6e5494;
+}
+
+.social-icons .social-icon-twitter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social-icons .social-icon-twitter:last-child {
+  margin-right: 0;
+}
+.social-icons .social-icon-twitter:hover {
+  background-color: #1da1f2;
+}
+
+.social-icons .social-icon-quora {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social-icons .social-icon-quora:last-child {
+  margin-right: 0;
+}
+.social-icons .social-icon-quora:hover {
+  background-color: #a82400;
+}
+
+
+.social-icons .social-icon-resume {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 7.0rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social-icons .social-icon-resume:last-child {
+  margin-right: 0;
+}
+.social-icons .social-icon-resume:hover {
+  background-color: #fb8a2e;
+  
 }
 
 .dev-icons {

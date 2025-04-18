@@ -1,50 +1,49 @@
-# Software Engineer Portfolio
+# Jayashankar Mangina's Personal Website
 
-A modern, responsive portfolio website for software engineers to showcase their skills, projects, and experience.
+Welcome to the repository for my personal website, built to showcase my skills, projects, and professional journey.
 
 ## Features
 
-- Clean, professional design
-- Fully responsive layout for all device sizes
-- Interactive navigation with smooth scrolling
-- Skills section with animated progress bars
-- Filterable projects section
-- Timeline-based experience section
-- Contact form
-- Social media integration
+- Minimalistic and modern design
+- Fully responsive for all screen sizes
+- Smooth navigation and user-friendly interface
+- Dedicated sections for skills, projects, and experience
+- Contact form for easy communication
+- Social media and GitHub integration
 
 ## Technologies Used
 
 - HTML5
-- CSS3 (with CSS variables)
-- JavaScript (vanilla)
-- Font Awesome icons
-- Google Fonts
+- CSS3 (with custom styling)
+- JavaScript
+- Font Awesome for icons
+- Google Fonts for typography
 
 ## Sections
 
-1. **Hero Section** - Introduction and call-to-action
-2. **About** - Professional summary and background
-3. **Skills** - Technical skills with visual indicators
-4. **Projects** - Portfolio of work with filtering
-5. **Experience** - Work history in timeline format
-6. **Education** - Academic background and certifications
-7. **Contact** - Contact form and information
+1. **Home** - Introduction and overview
+2. **About Me** - Personal and professional background
+3. **Skills** - Highlight of technical expertise
+4. **Projects** - Showcase of completed and ongoing work
+5. **Experience** - Timeline of professional roles
+6. **Education** - Academic qualifications and certifications
+7. **Contact** - Form and details for reaching out
 8. **Footer** - Copyright and additional links
 
 ## Deployment
 
-This site is configured for deployment on GitHub Pages.
+This website is hosted on GitHub Pages. You can view it live [here](https://jyshnkr.github.io).
 
 ## Customization
 
-To customize this portfolio for your own use:
+If you'd like to adapt this repository for your own use:
 
-1. Replace placeholder content in index.html with your information
-2. Add your own project images to the images directory
-3. Update links to your social media profiles and GitHub repositories
-4. Modify the color scheme in css/styles.css if desired (using CSS variables)
+1. Replace the content in `index.html` with your personal details.
+2. Add your own images to the `images` directory.
+3. Update the links to your social media profiles and projects.
+4. Modify the styles in `css/styles.css` to match your preferences.
 
 ## License
 
-MIT
+This project is licensed under the MIT License. Feel free to use and modify it as per your needs.
+

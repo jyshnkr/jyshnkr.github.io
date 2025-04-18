@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Engineer Portfolio</title>
+    <title>JayaShankar Mangina's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/placeholders.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -36,7 +36,7 @@
             </div>
         </nav>
     </header>
-
+    
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
@@ -45,19 +45,17 @@
                 <h2>Software Engineer</h2>
                 <p>Passionate about building scalable applications and solving complex problems</p>
                 <div class="hero-buttons">
-                    <a href="/Users/jayashankarmangina/Downloads/JayaShankar_SWE_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+                    <a href="assets/JayaShankar_SWE_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
                 <div class="social-icons">
                     <a href="https://github.com/jyshnkr" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/jayashankarmangina/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://medium.com/@jayashankarmangina" target="_blank"><i class="fab fa-medium"></i></a>
-                    <a href="https://dev.to/jyshnkr" target="_blank"><i class="fab fa-dev"></i></a>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
@@ -69,14 +67,18 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <p>I'm a results-driven Software Engineer with a passion for developing innovative applications that deliver exceptional user experiences. With a strong foundation in full-stack development and cloud technologies, I specialize in building scalable, maintainable solutions to complex problems.</p>
-                    <p>My technical expertise spans Java, Python, JavaScript, and various frameworks including React and Spring Boot. I have extensive experience with AWS services and containerization technologies like Docker and Kubernetes.</p>
-                    <p>I thrive in collaborative environments and enjoy tackling challenging problems with creative solutions. When I'm not coding, you can find me contributing to open-source projects, mentoring other developers, and continuously learning new technologies to expand my skill set.</p>
+                    <p>
+                        Software Engineer with 5+ years designing and delivering cloud-native microservices on Java & AWS; drove 100% data integrity and cut device-tracking time by 40% at Amazon, and slashed client emissions by 60% with 100% test coverage at AWS.
+                        Expert in Spring Boot, React, Docker, Kubernetes, and CI/CD pipelines—adept at architecting high-performance, user-centric solutions.
+                        Collaborative leader who mentors teams, automates workflows, and aligns technical excellence with strategic goals.
+                        Passionate about clean code, continuous innovation, and driving measurable business impact.
+                        Ready to partner on your next breakthrough and build software that scales with your vision.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
@@ -88,13 +90,13 @@
                         <div class="skill-item">
                             <span class="skill-name">Java</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 95%"></div>
+                                <div class="skill-level" data-percent="95" style="width: 0;"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Python</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%"></div>
+                                <div class="skill-level" data-percent="90" style="width: 0;"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -190,171 +192,157 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web</button>
                 <button class="filter-btn" data-filter="mobile">Mobile</button>
                 <button class="filter-btn" data-filter="backend">Backend</button>
             </div>
             <div class="projects-grid">
-                <div class="project-card" data-category="backend">
+                <div class="project-card" data-category="mobile">
                     <div class="project-image">
                         <div class="placeholder-image project-placeholder">
-                            <span>Distributed Data Processing</span>
+                            <span>Community Emergency Response Team</span>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>PyFlink Stream Processing</h3>
-                        <p>A distributed data processing application that processes large-scale streaming data with Apache Flink and Python for real-time analytics.</p>
+                        <h3>Community Emergency Response Team (CERT)</h3>
+                        <p>
+                            Spearheaded development of an iOS app for real‑time emergency response and rescue coordination, decreasing response times by 40% across multiple incidents.
+                        </p>
+                        <div class="project-tech">
+                            <span>Swift</span>
+                            <span>SwiftUI</span>
+                            <span>UIKit</span>
+                            <span>iOS SDK</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jyshnkr/CERT" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="placeholder-image project-placeholder">
+                            <span>Pic‑to‑Send iOS App</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pic‑to‑Send (iOS)</h3>
+                        <p>
+                            Directed a 6‑member team in designing and developing a real‑time media‑sharing iOS application, reducing file‑transfer latency by 40%.
+                        </p>
+                        <div class="project-tech">
+                            <span>Swift</span>
+                            <span>SwiftUI</span>
+                            <span>UIKit</span>
+                            <span>Xcode</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jyshnkr/PicToSend_G03_iOS_Project" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <div class="placeholder-image project-placeholder">
+                            <span>Full‑Stack PageRank</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Google Page‑Rank Algorithm (Full‑Stack)</h3>
+                        <p>
+                            Directed a cross‑functional team in developing a PageRank algorithm with Python and Apache Flink, improving efficiency by 40% and processing speed by 30%.
+                        </p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>Apache Flink</span>
                             <span>Kafka</span>
-                            <span>AWS</span>
+                            <span>Docker</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/jyshnkr/PyFlink-G05" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="mobile">
-                    <div class="project-image">
-                        <div class="placeholder-image project-placeholder">
-                            <span>iOS App</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>WeatherNow iOS App</h3>
-                        <p>A weather forecasting iOS application with location tracking, detailed weather information, and customizable alerts for changing conditions.</p>
-                        <div class="project-tech">
-                            <span>Swift</span>
-                            <span>SwiftUI</span>
-                            <span>CoreLocation</span>
-                            <span>WeatherKit</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/jyshnkr/WeatherNow" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <div class="placeholder-image project-placeholder">
-                            <span>Full Stack Application</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>TaskMaster Project Management</h3>
-                        <p>A comprehensive project management application with task tracking, team collaboration, and customizable workflows for agile development.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Express</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://taskmaster-jyshnkr.vercel.app" target="_blank" class="btn btn-sm">Live Demo</a>
-                            <a href="https://github.com/jyshnkr/taskmaster" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="backend">
-                    <div class="project-image">
-                        <div class="placeholder-image project-placeholder">
-                            <span>Cloud Infrastructure</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Cloud Cost Optimizer</h3>
-                        <p>A tool that analyzes AWS infrastructure usage patterns and provides recommendations for cost optimization while maintaining performance.</p>
-                        <div class="project-tech">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>AWS SDK</span>
-                            <span>Terraform</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/jyshnkr/cloud-cost-optimizer" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
             <h2 class="section-title">Work Experience</h2>
             <div class="timeline">
+                <!-- Amazon -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Senior Software Engineer</h3>
-                        <h4>Tech Innovations Inc.</h4>
-                        <p>Lead the development of scalable web applications using React, Node.js, and AWS. Implemented CI/CD pipelines and mentored junior developers.</p>
-                        <div class="timeline-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>AWS</span>
-                            <span>Docker</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2018 - 2021</div>
+                    <div class="timeline-date">June 2024 – Present</div>
                     <div class="timeline-content">
                         <h3>Software Engineer</h3>
-                        <h4>Digital Solutions LLC</h4>
-                        <p>Developed and maintained RESTful APIs and microservices. Collaborated with cross-functional teams to deliver high-quality software solutions.</p>
+                        <h4>Amazon – Austin, TX</h4>
+                        <p>
+                            Spearheaded API contract refactoring with Pydantic-based validations to achieve 100% data integrity and reduce errors to 0.5%; developed an automated device‑discovery UI that cut manual tracking time by 40% across 5,000 devices.
+                        </p>
                         <div class="timeline-tech">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>PostgreSQL</span>
-                            <span>Kubernetes</span>
+                            <span>Java</span><span>AWS</span><span>React</span><span>Pydantic</span>
                         </div>
                     </div>
                 </div>
+                <!-- Amazon Web Services -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">2016 - 2018</div>
+                    <div class="timeline-date">July 2022 – June 2024</div>
                     <div class="timeline-content">
-                        <h3>Junior Developer</h3>
-                        <h4>WebTech Startup</h4>
-                        <p>Assisted in the development of web applications and implemented responsive UI designs. Participated in code reviews and agile development processes.</p>
+                        <h3>Software Engineer</h3>
+                        <h4>Amazon Web Services – Seattle, WA</h4>
+                        <p>
+                            Built a Scope‑3 carbon‑emissions service that slashed client emissions by 60%, implemented 100% integration test coverage (cutting post‑deploy issues by 98%), and designed an AWS Cloudscape UI with a 95% satisfaction score.
+                        </p>
                         <div class="timeline-tech">
-                            <span>JavaScript</span>
-                            <span>HTML/CSS</span>
-                            <span>jQuery</span>
-                            <span>PHP</span>
+                            <span>AWS</span><span>Python</span><span>Cloudscape</span><span>Testing</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cognizant -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Nov 2019 – Dec 2020</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>Cognizant Technology Solutions – Chennai, India</h4>
+                        <p>
+                            Engineered Spring‑based backend services and dynamic JSP/AJAX front‑ends, boosting performance and load times by 40%; streamlined Maven workflows for 40% faster builds.
+                        </p>
+                        <div class="timeline-tech">
+                            <span>Spring Boot</span><span>Java</span><span>JSP/AJAX</span><span>Maven</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Education Section -->
     <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Education & Certifications</h2>
+            <h2 class="section-title">Education</h2>
             <div class="education-grid">
                 <div class="education-card">
                     <div class="education-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="education-info">
-                        <h3>Master of Science in Applied Computer Science</h3>
+                        <h3>Master's in Applied Computer Science</h3>
                         <h4>Northwest Missouri State University</h4>
                         <p class="education-date">2019 - 2021</p>
-                        <p>Specialized in Big Data and Cloud Computing. GPA: 3.9/4.0</p>
+                        <p>GPA: 3.7/4.0</p>
                     </div>
                 </div>
                 <div class="education-card">
@@ -362,92 +350,51 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="education-info">
-                        <h3>Bachelor of Technology in Computer Science</h3>
-                        <h4>Jawaharlal Nehru Technological University</h4>
+                        <h3>Bachelor's in Electronics and Communication Engineering</h3>
+                        <h4>Andhra University</h4>
                         <p class="education-date">2015 - 2019</p>
-                        <p>Focus on Software Engineering and Data Structures. GPA: 3.8/4.0</p>
-                    </div>
-                </div>
-                <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="education-info">
-                        <h3>AWS Certified Solutions Architect - Associate</h3>
-                        <h4>Amazon Web Services</h4>
-                        <p class="education-date">2022</p>
-                    </div>
-                </div>
-                <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="education-info">
-                        <h3>Oracle Certified Professional: Java SE Developer</h3>
-                        <h4>Oracle</h4>
-                        <p class="education-date">2021</p>
+                        <p>GPA: 3.3/4.0</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>jayashankar.mangina@gmail.com</p>
+            <p class="contact-intro">
+                Prefer email? Drop me a line at 
+                <a href="mailto:jyshnkr.mangina@gmail.com">jyshnkr.mangina@gmail.com</a>, 
+                or submit the form below:
+            </p>
+            <div class="contact-form">
+                <form id="contactForm" action="https://formspree.io/f/mrbpwqrr" method="POST">
+                    <input type="hidden" name="_subject" value="New message from portfolio contact form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Location</h3>
-                        <p>Seattle, WA</p>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" _replyto required>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>GitHub</h3>
-                        <p>github.com/jyshnkr</p>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
-                    <div class="contact-social">
-                        <h3>Connect With Me</h3>
-                        <div class="social-icons">
-                            <a href="https://github.com/jyshnkr" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/jayashankarmangina/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://medium.com/@jayashankarmangina" target="_blank"><i class="fab fa-medium"></i></a>
-                            <a href="https://dev.to/jyshnkr" target="_blank"><i class="fab fa-dev"></i></a>
-                        </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div id="formStatus"></div>
             </div>
         </div>
     </section>
-
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -465,7 +412,7 @@
             <a href="#home"><i class="fas fa-arrow-up"></i></a>
         </div>
     </footer>
-
+    
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -113,3 +113,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.skill-level').forEach(el => {
+        // Read the target percent
+        const pct = el.getAttribute('data-percent');
+        // Trigger the CSS transition
+        el.style.width = pct + '%';
+    });
+});
+
+// Smooth scroll + close mobile menu on first click
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+  
+      // 1) Determine the target section
+      const targetId = this.getAttribute('href').substring(1);
+      const targetEl = document.getElementById(targetId);
+      if (targetEl) {
+        // 2) Smoothly scroll there
+        targetEl.scrollIntoView({ behavior: 'smooth' });
+      }
+  
+      // 3) If mobile menu is open, close it
+      const navMenu = document.querySelector('.nav-menu');
+      if (navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+      }
+    });
+  });

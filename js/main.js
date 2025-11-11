@@ -7,6 +7,42 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollArrow = document.getElementById('scrollArrow');
     let currentSection = 0;
     let isScrolling = false;
+    let arrowTimeout = null;
+    
+    // Update scroll arrow based on section
+    function updateScrollArrow() {
+        if (!scrollArrow) return;
+        
+        const isLastSection = currentSection === sections.length - 1;
+        const svg = scrollArrow.querySelector('svg');
+        
+        // Clear any existing timeout
+        if (arrowTimeout) {
+            clearTimeout(arrowTimeout);
+        }
+        
+        if (isLastSection) {
+            // Last section: show up arrow at bottom
+            scrollArrow.classList.remove('hidden', 'up');
+            scrollArrow.classList.add('up');
+            scrollArrow.style.top = 'auto';
+            scrollArrow.style.bottom = '40px';
+            svg.innerHTML = '<path d="M12 19V5M5 12l7-7 7 7"/>';
+            scrollArrow.onclick = () => scrollToSection(0);
+        } else {
+            // Other sections: show down arrow for 5 seconds, positioned between tagline and insights
+            scrollArrow.classList.remove('hidden', 'up');
+            scrollArrow.style.bottom = 'auto';
+            scrollArrow.style.top = 'calc(50% + 80px)';
+            svg.innerHTML = '<path d="M12 5v14M5 12l7 7 7-7"/>';
+            scrollArrow.onclick = () => scrollToSection(currentSection + 1);
+            
+            // Hide after 5 seconds
+            arrowTimeout = setTimeout(() => {
+                scrollArrow.classList.add('hidden');
+            }, 5000);
+        }
+    }
     
     // Generate QR Code for Resume
     function generateQRCode() {
@@ -94,10 +130,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     scrollDots[index].classList.add('active');
                 }
                 
-                // Hide scroll arrow after first scroll
-                if (index > 0 && scrollArrow) {
-                    scrollArrow.classList.add('hidden');
-                }
+                // Update scroll arrow
+                updateScrollArrow();
             }
         });
     }
@@ -122,12 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dot.addEventListener('click', () => scrollToSection(index));
     });
     
-    // Scroll arrow click
-    if (scrollArrow) {
-        scrollArrow.addEventListener('click', () => {
-            scrollToSection(1);
-        });
-    }
+    // Scroll arrow click handler is now set in updateScrollArrow()
     
     // Keyboard Navigation
     document.addEventListener('keydown', function(e) {
@@ -191,6 +220,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initial update
     updateActiveIndicator();
+    
+    // Initial arrow setup
+    updateScrollArrow();
     
     // Touch/swipe support for mobile
     let touchStartY = 0;

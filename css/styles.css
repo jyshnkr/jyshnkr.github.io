@@ -117,6 +117,8 @@ body {
     scroll-snap-stop: always;
     position: relative;
     padding: 80px 5%;
+    will-change: transform;
+    contain: layout style paint;
 }
 
 /* ===== Hero Section ===== */
@@ -679,6 +681,7 @@ body {
     
     .connect-social {
         gap: 20px;
+        flex-direction: column;
     }
     
     .social-link {
@@ -693,11 +696,6 @@ body {
         width: 180px;
         height: 180px;
         padding: 15px;
-    }
-    
-    .connect-social {
-        flex-direction: column;
-        gap: 30px;
     }
 }
 
@@ -728,13 +726,9 @@ body {
 }
 
 /* Performance optimizations */
-.fullscreen-section {
-    will-change: transform;
-    contain: layout style paint;
-}
-
 .hero-name,
 .work-title,
-.connect-title {
+.connect-title,
+.projects-title {
     will-change: transform;
 }

@@ -412,7 +412,43 @@ body {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.03em;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+}
+
+/* Calendar Scheduling Container */
+.schedule-container {
+    margin: 0 0 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+/* Schedule Link - Inverted colors (black text on white background) */
+.schedule-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: 400;
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: opacity var(--transition);
+    padding: 12px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    font-family: var(--font-family);
+    cursor: pointer;
+    outline: none;
+}
+
+.schedule-link:hover {
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(0, 0, 0, 0.5);
 }
 
 .connect-email {
@@ -472,7 +508,7 @@ body {
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin: 0 0 60px 0;
     min-height: 60px;
 }
 
@@ -551,8 +587,12 @@ body {
     }
     
     .connect-social {
-        margin-top: 50px;
+        margin: 0 0 50px 0;
         gap: 30px;
+    }
+    
+    .schedule-container {
+        margin: 0 0 50px 0;
     }
 }
 
@@ -682,6 +722,11 @@ body {
     .connect-social {
         gap: 20px;
         flex-direction: column;
+        margin: 0 0 40px 0;
+    }
+    
+    .schedule-container {
+        margin: 0 0 40px 0;
     }
     
     .social-link {
@@ -722,6 +767,10 @@ body {
         width: 150px;
         height: 150px;
         padding: 10px;
+    }
+    
+    .schedule-container {
+        margin: 0 0 30px 0;
     }
 }
 
